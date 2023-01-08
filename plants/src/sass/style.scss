@@ -2,14 +2,19 @@
 
 //Abstract
 @import 'abstract/constants';
+@import 'abstract/mixins';
 
 // Base
 
 //Layouts
 @import 'layouts/wrapper';
+@import 'layouts/columns';
 @import 'layouts/header';
-// @import "layouts/columns";
 @import 'layouts/footer';
 
 // Components
 @import 'components/navigation';
+@import 'components/welcome';
+@import 'components/about';
+@import 'components/service';
+@import 'components/contacts';

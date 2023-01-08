@@ -402,13 +402,44 @@ ul {
 }
 
 .wrapper {
-  max-width: 1197px;
+  max-width: 1440px;
   margin: auto;
 }
 
+.layout-4-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-4-column > * {
+  flex-basis: 21%;
+}
+
+.layout-3-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-3-column > * {
+  flex-basis: 30%;
+}
+.layout-3-column:after {
+  content: "";
+  width: 30%;
+  display: block;
+}
+
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-2-column > * {
+  flex-basis: 48%;
+}
+
 .header {
-  background: #ffffff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  background: #edf2ec;
   padding: 15px 0 17px 0;
 }
 
@@ -422,16 +453,36 @@ ul {
   display: flex;
 }
 
-.header__hamburger {
-  margin-right: 37px;
-}
-
 .header__buttons > .button {
   margin-left: 14px;
 }
 .header__buttons > .button:first-child {
   margin-left: 14px;
   margin-left: 0;
+}
+
+.footer {
+  background: #ffffff;
+  padding: 60px 0 70px;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  padding-left: 152px;
+}
+
+.footer-navigation__title {
+  margin: 0 0 15px;
+}
+
+.footer-navigation__links a {
+  color: #544837;
 }
 
 .navigation {
@@ -444,6 +495,82 @@ ul {
   list-style: none;
   padding: 0 10px;
   cursor: pointer;
+}
+
+.welcome {
+  background: #edf2ec;
+}
+
+.welcome__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome__content {
+  padding-right: 65px;
+}
+
+.welcome__title {
+  margin: 0 0 30px;
+}
+
+.welcome__buttons {
+  display: flex;
+  align-items: center;
+}
+.welcome__buttons > * {
+  margin-right: 44px;
+}
+.welcome__buttons > *:last-child {
+  margin-right: 0;
+}
+
+.welcome__text {
+  max-width: 487px;
+  margin: 0 0 45px;
+}
+
+.about {
+  background: #ffffff;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__content {
+  padding-right: 65px;
+}
+
+.about__title {
+  margin: 0 0 30px;
+}
+
+.about__buttons {
+  display: flex;
+  align-items: center;
+}
+.about__buttons > * {
+  margin-right: 44px;
+}
+.about__buttons > *:last-child {
+  margin-right: 0;
+}
+
+.about__text {
+  max-width: 487px;
+  margin: 0 0 45px;
+}
+
+.service {
+  background: #edf2ec;
+}
+
+.contacts {
+  background: #edf2ec;
 }
 
 /*# sourceMappingURL=style.css.map */

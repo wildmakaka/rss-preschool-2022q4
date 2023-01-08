@@ -1,6 +1,5 @@
 .header {
-  background: $color-light;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  background: $color-background-primary;
   padding: 15px 0 17px 0;
 }
 
@@ -12,10 +11,6 @@
 
 .header__logo-line {
   display: flex;
-}
-
-.header__hamburger {
-  margin-right: 37px;
 }
 
 .header__buttons {

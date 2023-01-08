@@ -1,0 +1,33 @@
+.welcome {
+  background: $color-background-primary;
+}
+
+.welcome__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome__content {
+  padding-right: 65px;
+}
+
+.welcome__title {
+  margin: 0 0 30px;
+}
+
+.welcome__buttons {
+  display: flex;
+  align-items: center;
+  > * {
+    margin-right: 44px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.welcome__text {
+  max-width: 487px;
+  margin: 0 0 45px;
+}

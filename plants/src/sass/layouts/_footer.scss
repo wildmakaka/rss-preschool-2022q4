@@ -1,9 +1,12 @@
 .footer {
+  background: $color-background-light;
   padding: 60px 0 70px;
 }
 
 .footer__wrapper {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-navigation {
@@ -16,7 +19,6 @@
 }
 
 .footer-navigation__links {
-  @extend %font-add;
   a {
     color: $color-text;
   }
