@@ -1,3 +1,1 @@
-console.log(
-  '\n Everything is OK!\n Everything is OK!\n Everything is OK!\n Everything is OK!\n Everything is OK!\n Everything is OK!\n Everything is OK!'
-);
+console.log('\n Недостаточно навыков в верстке!\n Не хватило времени!\n ');

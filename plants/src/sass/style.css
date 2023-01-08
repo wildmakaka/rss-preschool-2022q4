@@ -401,6 +401,55 @@ ul {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
+.button {
+  padding: 11px 25px 13px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button_bordered {
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+  color: #544837;
+}
+.button_bordered:hover {
+  background: #bcd0e5;
+  border-color: #bcd0e5;
+}
+.button_colored {
+  background: #499a18;
+  color: #ffffff;
+  border: 1px solid #499a18;
+}
+.button_colored:hover {
+  background: #e06733;
+  border-color: #e06733;
+}
+
+.link-button {
+  color: #499a18;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.3s;
+}
+.link-button:hover {
+  color: #f03e3d;
+}
+.link-button:hover .ico_play {
+  background-image: url("../img/icons/play-hover.svg");
+}
+
+.link-button__text {
+  margin-left: 9px;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: auto;
@@ -416,6 +465,7 @@ ul {
 }
 
 .layout-3-column {
+  padding-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -441,6 +491,7 @@ ul {
 .header {
   background: #edf2ec;
   padding: 15px 0 17px 0;
+  font-size: 2rem;
 }
 
 .header__wrapper {
@@ -464,6 +515,7 @@ ul {
 .footer {
   background: #ffffff;
   padding: 60px 0 70px;
+  font-size: 2rem;
 }
 
 .footer__wrapper {
@@ -517,15 +569,17 @@ ul {
 
 .welcome__content {
   padding-right: 65px;
+  width: 650px;
 }
 
 .welcome__title {
-  margin: 0 0 30px;
+  margin: 0 0 0px;
   color: #544837;
   font-size: 45px;
 }
 
 .welcome__text {
+  padding-top: 30px;
   max-width: 487px;
   margin: 0 0 45px;
   color: #544837;
@@ -563,8 +617,10 @@ ul {
 }
 
 .about__title {
+  font-size: 3rem;
   margin: 0 0 30px;
   color: #499a18;
+  width: 400px;
 }
 
 .about_additional {
@@ -591,11 +647,50 @@ ul {
 }
 
 .service {
+  padding-top: 40px;
   background: #edf2ec;
 }
 
+.service__title {
+  font-size: 3rem;
+  margin: 0 0 30px;
+  color: #499a18;
+}
+
+.service__header {
+  font-size: 3rem;
+  color: #e06733;
+}
+
+.service__text {
+  font-size: 2rem;
+}
+
+.service_additional {
+  margin: 0 0 30px;
+  color: #e06733;
+}
+
+.prices {
+  padding-top: 40px;
+  font-size: 2rem;
+}
+
+.prices__text {
+  margin: 0 0 30px;
+  color: #544837;
+  font-size: 45px;
+}
+
 .contacts {
+  padding-top: 40px;
   background: #edf2ec;
+}
+
+.contacts__title {
+  font-size: 4rem;
+  margin: 0 0 30px;
+  color: #499a18;
 }
 
 /*# sourceMappingURL=style.css.map */

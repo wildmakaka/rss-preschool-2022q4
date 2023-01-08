@@ -1,3 +1,24 @@
 .service {
+  padding-top: 40px;
   background: $color-background-primary;
+}
+
+.service__title {
+  font-size: 3rem;
+  margin: 0 0 30px;
+  color: $color-primary;
+}
+
+.service__header {
+  font-size: 3rem;
+  color: $color-additional;
+}
+
+.service__text {
+  font-size: 2rem;
+}
+
+.service_additional {
+  margin: 0 0 30px;
+  color: $color-additional;
 }

@@ -1,3 +1,10 @@
 .contacts {
+  padding-top: 40px;
   background: $color-background-primary;
+}
+
+.contacts__title {
+  font-size: 4rem;
+  margin: 0 0 30px;
+  color: $color-primary;
 }

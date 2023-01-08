@@ -5,6 +5,8 @@
 @import 'abstract/mixins';
 
 // Base
+@import 'base/base';
+@import 'base/buttons';
 
 //Layouts
 @import 'layouts/wrapper';
@@ -17,4 +19,5 @@
 @import 'components/welcome';
 @import 'components/about';
 @import 'components/service';
+@import 'components/prices';
 @import 'components/contacts';

@@ -10,15 +10,17 @@
 
 .welcome__content {
   padding-right: 65px;
+  width: 650px;
 }
 
 .welcome__title {
-  margin: 0 0 30px;
+  margin: 0 0 0px;
   color: $color-text-nav;
   font-size: 45px;
 }
 
 .welcome__text {
+  padding-top: 30px;
   max-width: 487px;
   margin: 0 0 45px;
   color: $color-text-nav;
