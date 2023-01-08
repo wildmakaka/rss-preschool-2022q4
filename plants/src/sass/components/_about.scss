@@ -14,6 +14,19 @@
 
 .about__title {
   margin: 0 0 30px;
+  color: $color-primary;
+}
+
+.about_additional {
+  margin: 0 0 30px;
+  color: $color-additional;
+}
+
+.about__text {
+  max-width: 487px;
+  margin: 0 0 45px;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .about__buttons {
@@ -25,9 +38,4 @@
       margin-right: 0;
     }
   }
-}
-
-.about__text {
-  max-width: 487px;
-  margin: 0 0 45px;
 }

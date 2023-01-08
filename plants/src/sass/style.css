@@ -492,9 +492,17 @@ ul {
 }
 
 .navigation__link {
-  list-style: none;
-  padding: 0 10px;
+  list-style: none !important;
+  padding: 0 24px;
   cursor: pointer;
+  text-decoration: none;
+}
+.navigation__link a {
+  text-decoration: none;
+  color: #544837;
+}
+.navigation__link a:hover {
+  color: #e06733;
 }
 
 .welcome {
@@ -513,6 +521,20 @@ ul {
 
 .welcome__title {
   margin: 0 0 30px;
+  color: #544837;
+  font-size: 45px;
+}
+
+.welcome__text {
+  max-width: 487px;
+  margin: 0 0 45px;
+  color: #544837;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.welcome_colored {
+  color: #499a18;
 }
 
 .welcome__buttons {
@@ -524,11 +546,6 @@ ul {
 }
 .welcome__buttons > *:last-child {
   margin-right: 0;
-}
-
-.welcome__text {
-  max-width: 487px;
-  margin: 0 0 45px;
 }
 
 .about {
@@ -547,6 +564,19 @@ ul {
 
 .about__title {
   margin: 0 0 30px;
+  color: #499a18;
+}
+
+.about_additional {
+  margin: 0 0 30px;
+  color: #e06733;
+}
+
+.about__text {
+  max-width: 487px;
+  margin: 0 0 45px;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .about__buttons {
@@ -558,11 +588,6 @@ ul {
 }
 .about__buttons > *:last-child {
   margin-right: 0;
-}
-
-.about__text {
-  max-width: 487px;
-  margin: 0 0 45px;
 }
 
 .service {

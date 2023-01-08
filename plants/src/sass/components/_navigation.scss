@@ -5,7 +5,17 @@
 }
 
 .navigation__link {
-  list-style: none;
-  padding: 0 10px;
+  list-style: none !important;
+  padding: 0 24px;
   cursor: pointer;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    color: $color-text-nav;
+  }
+
+  a:hover {
+    color: $color-text-nav-hover;
+  }
 }
