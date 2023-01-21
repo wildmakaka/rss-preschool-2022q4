@@ -544,7 +544,7 @@ html {
 }
 
 .navigation__link {
-  list-style: none !important;
+  list-style: none;
   padding: 0 24px;
   cursor: pointer;
   text-decoration: none;
@@ -669,6 +669,14 @@ html {
 .service_additional {
   margin: 0 0 30px;
   color: #e06733;
+}
+
+.service__buttons {
+  display: flex;
+}
+
+.service__buttons__item {
+  margin: 0 25px;
 }
 
 .prices {

@@ -22,3 +22,11 @@
   margin: 0 0 30px;
   color: $color-additional;
 }
+
+.service__buttons {
+  display: flex;
+}
+
+.service__buttons__item {
+  margin: 0 25px;
+}
