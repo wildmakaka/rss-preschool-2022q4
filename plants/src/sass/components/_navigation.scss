@@ -16,6 +16,16 @@
   }
 
   a:hover {
-    color: $color-text-nav-hover;
+    color: $color-additional;
+  }
+
+  @include media-tablet {
+    padding: 0 10px;
+  }
+}
+
+.header__navigation {
+  @include media-mobile {
+    display: none;
   }
 }

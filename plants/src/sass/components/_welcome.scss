@@ -6,11 +6,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row-reverse;
 }
 
 .welcome__content {
   padding-right: 65px;
   width: 650px;
+
+  order: 1;
+
+  @include media-tablet {
+    order: 2;
+  }
 }
 
 .welcome__title {
@@ -40,5 +47,17 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+.welcome__image {
+  order: 2;
+  @include media-tablet {
+    order: 1;
+    width: 30%;
+    height: 30%;
+  }
+  @include media-mobile {
+    display: none;
   }
 }

@@ -8,6 +8,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include media-tablet {
+    display: block;
+  }
+
+  @include media-mobile {
+    display: block;
+  }
 }
 
 .footer-navigation {
