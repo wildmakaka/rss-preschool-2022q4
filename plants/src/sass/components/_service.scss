@@ -25,6 +25,10 @@
 
 .service__buttons {
   display: flex;
+
+  @include media-mobile {
+    display: block;
+  }
 }
 
 .service__buttons__item {

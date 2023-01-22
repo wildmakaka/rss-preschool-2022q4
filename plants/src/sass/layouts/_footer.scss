@@ -2,6 +2,16 @@
   background: $color-background-light;
   padding: 60px 0 70px;
   font-size: 2rem;
+
+  @include media-tablet {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  @include media-mobile {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
 }
 
 .footer__wrapper {
@@ -11,10 +21,12 @@
 
   @include media-tablet {
     display: block;
+    text-align: center;
   }
 
   @include media-mobile {
     display: block;
+    text-align: center;
   }
 }
 

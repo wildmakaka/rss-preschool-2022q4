@@ -8,4 +8,24 @@
   font-size: 4rem;
   margin: 0 0 30px;
   color: $color-primary;
+  text-align: center;
+}
+
+.contacts__image {
+  text-align: center;
+}
+
+.contacts__picture {
+  width: 400px;
+  height: 496.99px;
+
+  @include media-tablet {
+    width: 200px;
+    height: 248.49px;
+  }
+
+  @include media-mobile {
+    width: 100px;
+    height: 124.25px;
+  }
 }
