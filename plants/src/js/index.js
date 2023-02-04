@@ -25,6 +25,8 @@ const data = [
   },
 ];
 
+let activeButtonsCount = 0;
+
 window.onload = function () {
   console.log('RUN!');
 
@@ -90,14 +92,27 @@ const selectClickedButton = (clickedButton) => {
   let serviceEnabled = true;
 
   if (clickedButton.classList.contains('button_selected')) {
+    activeButtonsCount = activeButtonsCount - 1;
     clickedButton.classList.remove('button_selected');
     clickedButton.classList.add('button_bordered');
+
     serviceEnabled = false;
   } else {
+    if (activeButtonsCount >= 2) {
+      alert(
+        'По условиям задания вы не можете выбрать больше 2 элементов одновременно!'
+      );
+      return;
+    }
+
+    activeButtonsCount = activeButtonsCount + 1;
     clickedButton.classList.add('button_selected');
     clickedButton.classList.remove('button_bordered');
     serviceEnabled = true;
   }
+
+  console.log('SELECTED');
+  console.log(activeButtonsCount);
 
   filterBySelectedService(serviceEnabled, clickedButton);
 };
