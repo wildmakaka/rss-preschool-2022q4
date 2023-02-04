@@ -22,11 +22,30 @@
     color: $color-light;
     background: $color-additional;
     border: none;
+    animation: shake 0.75s;
 
     &:hover {
       background: #e7880b;
       border-color: $color-additional;
       border-radius: 4px;
     }
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

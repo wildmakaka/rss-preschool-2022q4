@@ -26,7 +26,7 @@ const data = [
 ];
 
 window.onload = function () {
-  console.log('START!!!');
+  console.log('RUN!');
 
   loadData();
   addSelectHandler();

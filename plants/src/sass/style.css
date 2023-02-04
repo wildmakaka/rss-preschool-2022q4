@@ -427,6 +427,7 @@ html {
   color: #ffffff;
   background: #e06733;
   border: none;
+  animation: shake 0.75s;
 }
 .button_selected:hover {
   background: #e7880b;
@@ -434,6 +435,23 @@ html {
   border-radius: 4px;
 }
 
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .wrapper {
   max-width: 1440px;
   margin: auto;
@@ -818,8 +836,26 @@ html {
 }
 .service_block_blured {
   filter: blur(40px);
+  animation: shake 0.75s;
 }
 
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .service__title {
   font-size: 3rem;
   margin: 0 0 30px;
