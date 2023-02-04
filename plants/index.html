@@ -109,115 +109,132 @@
 
           <div class="service__buttons">
             <div class="service__buttons__item">
-              <button class="button button_colored">Gardens</button>
+              <button class="button button_bordered">Gardens</button>
             </div>
 
             <div class="service__buttons__item">
-              <button class="button button_colored">Lawn</button>
+              <button class="button button_bordered">Lawn</button>
             </div>
 
             <div class="service__buttons__item">
-              <button class="button button_colored">Planting</button>
+              <button class="button button_bordered">Planting</button>
             </div>
           </div>
 
-          <div class="layout-3-column strategy-wrapper">
-            <article class="strategy block-shadowed">
-              <img
-                class="strategy__image"
-                src="./src/img/services/pic1.png"
-                alt="strategy"
-              />
-              <div class="strategy__content">
-                <h3 class="strategy__name">
+          <div class="layout-3-column service-wrapper">
+            <article class="service_block gardens">
+              <div class="service_image_block">
+                <img
+                  class="service__image"
+                  src="./src/img/services/pic1.png"
+                  alt="service"
+                />
+              </div>
+              <div class="service__description">
+                <h3 class="service__name">
                   <span class="service__header">Garden care</span>
                 </h3>
-                <div class="strategy__tags tags">
+                <div class="service__tags tags">
                   <span class="service__text"
                     >Lorem Ipsum has been the industry</span
                   >
                 </div>
               </div>
             </article>
-            <article class="strategy block-shadowed">
-              <img
-                class="strategy__image"
-                src="./src/img/services/pic2.png"
-                alt="strategy"
-              />
-              <div class="strategy__content">
-                <h3 class="strategy__name">
+
+            <article class="service_block planting">
+              <div class="service_image_block">
+                <img
+                  class="service__image"
+                  src="./src/img/services/pic2.png"
+                  alt="service"
+                />
+              </div>
+              <div class="service__description planting">
+                <h3 class="service__name">
                   <span class="service__header">Planting</span>
                 </h3>
-                <div class="strategy__tags tags">
+                <div class="service__tags tags">
                   <span class="service__text"
                     >Lorem Ipsum has been the industry</span
                   >
                 </div>
               </div>
             </article>
-            <article class="strategy block-shadowed">
-              <img
-                class="strategy__image"
-                src="./src/img/services/pic3.png"
-                alt="strategy"
-              />
-              <div class="strategy__content">
-                <h3 class="strategy__name">
+
+            <article class="service_block lawn">
+              <div class="service_image_block">
+                <img
+                  class="service__image"
+                  src="./src/img/services/pic3.png"
+                  alt="service"
+                />
+              </div>
+              <div class="service__description">
+                <h3 class="service__name">
                   <span class="service__header">Lawn care</span>
                 </h3>
-                <div class="strategy__tags tags">
+                <div class="service__tags tags">
                   <span class="service__text"
                     >Lorem Ipsum has been the industry</span
                   >
                 </div>
               </div>
             </article>
-            <article class="strategy strategy_wide block-shadowed">
-              <img
-                class="strategy__image"
-                src="./src/img/services/pic4.png"
-                alt="strategy"
-              />
-              <div class="strategy__content">
-                <h3 class="strategy__name">
+
+            <article class="service_block planting">
+              <div class="service_image_block">
+                <img
+                  class="service__image"
+                  src="./src/img/services/pic4.png"
+                  alt="service"
+                />
+              </div>
+              <div class="service__description">
+                <h3 class="service__name">
                   <span class="service__header">Planting</span>
                 </h3>
-                <div class="strategy__tags tags">
+                <div class="service__tags tags">
                   <span class="service__text"
                     >Lorem Ipsum has been the industry</span
                   >
                 </div>
               </div>
             </article>
-            <article class="strategy block-shadowed">
-              <img
-                class="strategy__image"
-                src="./src/img/services/pic5.png"
-                alt="strategy"
-              />
-              <div class="strategy__content">
-                <h3 class="strategy__name">
+
+            <article class="service_block gardens">
+              <div class="service_image_block">
+                <img
+                  class="service__image"
+                  src="./src/img/services/pic5.png"
+                  alt="service"
+                />
+              </div>
+              <div class="service__description">
+                <h3 class="service__name">
                   <span class="service__header">Garden care</span>
                 </h3>
-                <div class="strategy__tags tags">
+                <div class="service__tags tags">
                   <span class="service__text"
                     >Lorem Ipsum has been the industry</span
                   >
                 </div>
               </div>
             </article>
-            <article class="strategy block-shadowed">
-              <img
-                class="strategy__image"
-                src="./src/img/services/pic6.png"
-                alt="strategy"
-              />
-              <div class="strategy__content">
-                <h3 class="strategy__name">
+
+            <article class="service_block planting">
+              <div class="service_image_block">
+                <img
+                  class="service__image"
+                  src="./src/img/services/pic6.png"
+                  alt="service"
+                />
+              </div>
+              <div class="service__description">
+                <h3 class="service__name">
                   <span class="service__header">Planting</span>
                 </h3>
-                <div class="strategy__tags tags">
+                <div class="service__tags tags">
                   <span class="service__text"
                     >Lorem Ipsum has been the industry</span
                   >
@@ -267,6 +284,39 @@
         <div class="contacts__content">
           <h2 class="contacts__title">Contact us</h2>
 
+          <div class="contacts_select_office">
+            <select name="selectCity" id="selectCity">
+              <option value="">--Please choose an option--</option>
+            </select>
+
+            <div class="selected_city_block">
+              <p>
+                City:
+                <span
+                  id="selected_city_block_city"
+                  class="selected_city_block_city"
+                ></span>
+              </p>
+              <p>
+                Phone:<span
+                  id="selected_city_block_phone"
+                  class="selected_city_block_phone"
+                ></span>
+              </p>
+              <p>
+                Office address:
+                <span
+                  id="selected_city_block_address"
+                  class="selected_city_block_address"
+                ></span>
+              </p>
+
+              <button class="button button_bordered">
+                <a id="selected_city_block_call_us_href" href="#">Call us</a>
+              </button>
+            </div>
+          </div>
+
           <div class="contacts__image">
             <img
               src="./src/img/contacts/contact_woman.png"
@@ -315,6 +365,7 @@
         </div>
       </div>
     </footer>
+    <!-- <script src="./src/js/report.js"></script> -->
     <script src="./src/js/index.js"></script>
   </body>
 </html>

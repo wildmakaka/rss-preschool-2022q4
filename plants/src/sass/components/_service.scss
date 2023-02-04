@@ -3,6 +3,14 @@
   background: $color-background-primary;
 }
 
+.service_block {
+  padding-bottom: 30px;
+
+  &_blured {
+    filter: blur(40px);
+  }
+}
+
 .service__title {
   font-size: 3rem;
   margin: 0 0 30px;
@@ -35,3 +43,9 @@
   margin: 0 25px;
   padding-bottom: 30px;
 }
+
+// .service_image_block {
+//   &_blured {
+//     filter: blur(40px);
+//   }
+// }
