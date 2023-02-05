@@ -249,31 +249,99 @@
     <section id="price" class="prices">
       <div class="wrapper">
         <h2 class="prices__title">Prices</h2>
-        <div class="layout-2-column prices-container">
-          <div class="prices__content">
-            <h2 class="prices__title">Basics</h2>
-            <h2 class="prices__title">Standard</h2>
-            <h2 class="prices__title">Pro care</h2>
-          </div>
-          <div class="prices__form">
-            <p class="prices__text">
-              Our best <span class="welcome_colored">gardeners</span> are ready
-              to help you
-            </p>
-
-            <br /><br />
-
-            <div class="promo__buttons">
-              <button class="button button_bordered">Contact us</button>
+        <div class="">
+          <div id="prices_accordion_block" class="prices_accordion_block">
+            <div class="prices__content">
+              <div class="accordion_block">
+              <button class="accordion">Basics</button>
+              <div class="panel">
+                <p>
+                  <div class="accordion_item">
+                    <div class="accordion_item_title">Basics</div>
+                    <hr/>
+                    <div class="accordion_item_text">
+                    Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    </div>
+                    <div><span class="accordion_item_price">$15</span> / per hour</div>
+                    <div class="accordion_button">
+                      <button class="button button_bordered accordion_button_btn">
+                        <a href="#contacts"
+                          >Order</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </p>
+              </div>
             </div>
 
-            <br /><br />
+            <div class="accordion_block">
+              <button class="accordion">Standard</button>
+              <div class="panel">
+                <p>
+                  <div class="accordion_item">
+                    <div class="accordion_item_title">Standard</div>
+                    <hr/>
+                    <div class="accordion_item_text">
+                    Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    </div>
+                    <div><span class="accordion_item_price">$25</span> / per hour</div>
+                    <div class="accordion_button">
+                      <button class="button button_bordered accordion_button_btn">
+                        <a href="#contacts"
+                          >Order</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
 
-            <img
-              src="./src/img/prices/leafs.png"
-              class="prices__image"
-              alt="about us content"
-            />
+            <div class="accordion_block">
+              <button class="accordion">Pro care</button>
+              <div class="panel">
+                <p>
+                  <div class="accordion_item">
+                    <div class="accordion_item_title">Pro care</div>
+                    <hr/>
+                    <div class="accordion_item_text">
+                    Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    </div>
+                    <div><span class="accordion_item_price">$35</span> / per hour</div>
+                    <div class="accordion_button">
+                      <button class="button button_bordered accordion_button_btn">
+                        <a href="#contacts"
+                          >Order</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+            </div>
+
+            <div class="prices__form">
+              <p class="prices__text">
+                Our best <span class="welcome_colored">gardeners</span> are
+                ready to help you
+              </p>
+
+              <br /><br />
+
+              <div class="promo__buttons">
+                <button class="button button_bordered">Contact us</button>
+              </div>
+
+              <br /><br />
+
+              <img
+                src="./src/img/prices/leafs.png"
+                class="prices__image"
+                alt="about us content"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -308,20 +376,21 @@
                 class="selected_city_block invisible"
               >
                 <p>
-                  City:
+                  <strong>City:</strong>
                   <span
                     id="selected_city_block_city"
                     class="selected_city_block_city"
                   ></span>
                 </p>
                 <p>
-                  Phone:<span
+                  <strong>Phone:</strong
+                  ><span
                     id="selected_city_block_phone"
                     class="selected_city_block_phone"
                   ></span>
                 </p>
                 <p>
-                  Office address:
+                  <strong>Office address:</strong>
                   <span
                     id="selected_city_block_address"
                     class="selected_city_block_address"
@@ -379,7 +448,7 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="./src/js/report.js"></script> -->
+    <script src="./src/js/report.js"></script>
     <script src="./src/js/index.js"></script>
   </body>
 </html>

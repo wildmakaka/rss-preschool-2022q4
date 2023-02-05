@@ -8,3 +8,121 @@
   color: $color-text-nav;
   font-size: 45px;
 }
+
+.prices_accordion_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices__content {
+  border: 1px solid #c0c0c0;
+  border-radius: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 15px;
+  width: 550px;
+  height: 250px;
+}
+
+.accordion {
+  border: 1px solid #c0c0c0;
+  border-radius: 15px;
+  background-color: $color-background-primary;
+  color: #444;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 2.6rem;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\2212';
+}
+
+.panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion_item {
+  border: 1px solid #c0c0c0;
+  border-radius: 15px;
+  background-color: $color-background-primary;
+  // width: 250px;
+  // height: 154px;
+}
+
+.accordion_item_title {
+  color: black;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.accordion_item_text {
+  font-size: 1.5rem;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.accordion_item_price {
+  color: $color-additional;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.accordion_button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.accordion_button a {
+  text-decoration: none;
+  color: white;
+}
+
+.accordion_button a:hover {
+  color: white;
+}
+
+.accordion_button_btn {
+  border-radius: 15px;
+}
+
+.accordion_button_btn a {
+  border-radius: 15px;
+}
+
+.accordion_button_btn a:hover {
+  border-radius: 15px;
+}
+
+.accordion_block {
+  padding: 10px;
+}
+
+.prices__form {
+  margin-left: 200px;
+  text-align: right;
+}
