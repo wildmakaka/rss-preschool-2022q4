@@ -14,13 +14,13 @@ const data = [
   {
     id: 3,
     city: 'Yonkers, NY',
-    phone: '+1 914	678 0003',
+    phone: '+1 914 678 0003',
     address: '511 Warburton Ave',
   },
   {
     id: 4,
     city: 'Sherrill, NY',
-    phone: '+1 315	908 0004',
+    phone: '+1 315 908 0004',
     address: '14 WEST Noyes BLVD',
   },
 ];
@@ -73,7 +73,7 @@ const addSelectHandler = () => {
       document.getElementById('selected_city_block_address').innerText =
         addressData[0].address;
       document.getElementById('selected_city_block_call_us_href').href =
-        'tel:' + addressData[0].phone;
+        'tel:' + addressData[0].phone.replace(/ /g, '');
       document
         .getElementById('selected_city_block')
         .classList.remove('invisible');

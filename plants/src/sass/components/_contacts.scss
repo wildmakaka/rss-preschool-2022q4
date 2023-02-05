@@ -29,3 +29,43 @@
     height: 124.25px;
   }
 }
+
+.contacts_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts_select_office {
+  font-size: 1.6rem;
+}
+
+.contacts_select_office_select {
+  border-radius: 15px;
+  margin: 40px;
+}
+
+.selected_city_block {
+  border: 1px solid #c0c0c0;
+  border-radius: 15px;
+  margin: 40px;
+  padding: 40px;
+  width: 400px;
+  height: 250px;
+}
+
+.contacts_city_button {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contacts_city_button a {
+  text-decoration: none;
+  color: white;
+}
+.contacts_city_button a:hover {
+  color: white;
+}
+
+.invisible {
+  display: none;
+}
