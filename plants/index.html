@@ -105,9 +105,9 @@
     <section id="service" class="service">
       <div class="wrapper service__wrapper">
         <div class="service__content">
-          <h2 class="service__title">Service and our projects</h2>
-
           <div class="service__buttons">
+            <h2 class="service__title">Service and our projects</h2>
+
             <div class="service__buttons__item">
               <button class="button button_bordered">Gardens</button>
             </div>
@@ -284,45 +284,55 @@
         <div class="contacts__content">
           <h2 class="contacts__title">Contact us</h2>
 
-          <div class="contacts_select_office">
-            <select name="selectCity" id="selectCity">
-              <option value="">--Please choose an option--</option>
-            </select>
-
-            <div class="selected_city_block">
-              <p>
-                City:
-                <span
-                  id="selected_city_block_city"
-                  class="selected_city_block_city"
-                ></span>
-              </p>
-              <p>
-                Phone:<span
-                  id="selected_city_block_phone"
-                  class="selected_city_block_phone"
-                ></span>
-              </p>
-              <p>
-                Office address:
-                <span
-                  id="selected_city_block_address"
-                  class="selected_city_block_address"
-                ></span>
-              </p>
-
-              <button class="button button_bordered">
-                <a id="selected_city_block_call_us_href" href="#">Call us</a>
-              </button>
+          <div class="contacts_block">
+            <!-- womain image-->
+            <div class="contacts__image">
+              <img
+                src="./src/img/contacts/contact_woman.png"
+                alt="Contact us image"
+                class="contacts__picture"
+              />
             </div>
-          </div>
 
-          <div class="contacts__image">
-            <img
-              src="./src/img/contacts/contact_woman.png"
-              alt="Contact us image"
-              class="contacts__picture"
-            />
+            <!-- Select -->
+
+            <div class="contacts_select_office">
+              <div class="contacts_select_office_select">
+                <select id="selectCity" name="selectCity">
+                  <option value="">--Please choose an option--</option>
+                </select>
+              </div>
+
+              <div
+                id="selected_city_block"
+                class="selected_city_block invisible"
+              >
+                <p>
+                  City:
+                  <span
+                    id="selected_city_block_city"
+                    class="selected_city_block_city"
+                  ></span>
+                </p>
+                <p>
+                  Phone:<span
+                    id="selected_city_block_phone"
+                    class="selected_city_block_phone"
+                  ></span>
+                </p>
+                <p>
+                  Office address:
+                  <span
+                    id="selected_city_block_address"
+                    class="selected_city_block_address"
+                  ></span>
+                </p>
+
+                <button class="button button_bordered">
+                  <a id="selected_city_block_call_us_href" href="#">Call us</a>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

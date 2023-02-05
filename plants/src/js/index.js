@@ -1,27 +1,27 @@
 const data = [
   {
     id: 1,
-    city: 'Madrid',
-    phone: '555-55-55',
-    address: 'Madrid address',
+    city: 'Canandiagua, NY',
+    phone: '+1 585 393 0001',
+    address: '151 Charlotte Street ',
   },
   {
     id: 2,
-    city: 'Milan',
-    phone: '666-66-66',
-    address: 'Milan address',
+    city: 'New York City',
+    phone: '+1 212 456 0002',
+    address: '9 East 91st Street ',
   },
   {
     id: 3,
-    city: 'Berlin',
-    phone: '777-77-77',
-    address: 'Berlin address',
+    city: 'Yonkers, NY',
+    phone: '+1 914	678 0003',
+    address: '511 Warburton Ave',
   },
   {
     id: 4,
-    city: 'Paris',
-    phone: '888-88-88',
-    address: 'Paris address',
+    city: 'Sherrill, NY',
+    phone: '+1 315	908 0004',
+    address: '14 WEST Noyes BLVD',
   },
 ];
 
@@ -55,7 +55,6 @@ const getDataById = (id) => {
       });
     }
   });
-
   return res;
 };
 
@@ -75,6 +74,11 @@ const addSelectHandler = () => {
         addressData[0].address;
       document.getElementById('selected_city_block_call_us_href').href =
         'tel:' + addressData[0].phone;
+      document
+        .getElementById('selected_city_block')
+        .classList.remove('invisible');
+    } else {
+      document.getElementById('selected_city_block').classList.add('invisible');
     }
   });
 };
@@ -89,18 +93,18 @@ const addButtonsClickHandler = () => {
 };
 
 const selectClickedButton = (clickedButton) => {
-  let serviceEnabled = true;
+  let filterEnabled = false;
 
   if (clickedButton.classList.contains('button_selected')) {
     activeButtonsCount = activeButtonsCount - 1;
     clickedButton.classList.remove('button_selected');
     clickedButton.classList.add('button_bordered');
 
-    serviceEnabled = false;
+    filterEnabled = false;
   } else {
     if (activeButtonsCount >= 2) {
       alert(
-        'По условиям задания вы не можете выбрать больше 2 элементов одновременно!'
+        'По условиям задания вы не можете выбрать больше 2 фильтров одновременно! \n Чтобы продолжить работу с фильтрами, снимите ранее выбранный фильтр!'
       );
       return;
     }
@@ -108,19 +112,15 @@ const selectClickedButton = (clickedButton) => {
     activeButtonsCount = activeButtonsCount + 1;
     clickedButton.classList.add('button_selected');
     clickedButton.classList.remove('button_bordered');
-    serviceEnabled = true;
+    filterEnabled = true;
   }
-
-  console.log('SELECTED');
-  console.log(activeButtonsCount);
-
-  filterBySelectedService(serviceEnabled, clickedButton);
+  filterBySelectedService(filterEnabled, clickedButton);
 };
 
-const filterBySelectedService = (serviceEnabled, clickedButton) => {
+const filterBySelectedService = (filterEnabled, clickedButton) => {
   let serviceBlocks = document.querySelectorAll('.service_block');
   serviceBlocks.forEach((block) => {
-    if (serviceEnabled) {
+    if (filterEnabled) {
       if (block.classList.contains(clickedButton.innerText.toLowerCase())) {
         block.classList.add('service_block_blured');
       }

@@ -403,6 +403,7 @@ ul {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 .button {
@@ -888,6 +889,33 @@ html {
 .service__buttons__item {
   margin: 0 25px;
   padding-bottom: 30px;
+}
+
+.contacts_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts_select_office {
+  font-size: 1.6rem;
+}
+
+.contacts_select_office_select {
+  border-radius: 15px;
+  margin: 40px;
+}
+
+.selected_city_block {
+  border: 1px solid #c0c0c0;
+  border-radius: 15px;
+  margin: 40px;
+  padding: 40px;
+  width: 400px;
+  height: 250px;
+}
+
+.invisible {
+  display: none;
 }
 
 .prices {
