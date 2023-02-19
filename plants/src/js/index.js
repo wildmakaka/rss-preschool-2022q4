@@ -28,7 +28,7 @@ const data = [
 let activeButtonsCount = 0;
 
 window.onload = function () {
-  console.log('RUN!');
+  console.log('Go Go Go!');
 
   loadData();
   addSelectHandler();
