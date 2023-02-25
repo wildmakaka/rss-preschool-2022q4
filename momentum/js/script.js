@@ -31,29 +31,51 @@ window.addEventListener('load', getLocalStorage);
 const showTime = () => {
   const time = document.querySelector('.time');
   const date = new Date();
-  const currentTime = date.toLocaleTimeString();
+  const currentTime = date.toLocaleTimeString([], {
+    hour12: false,
+  });
   time.textContent = currentTime;
   setTimeout(showTime, 1000);
 };
 
 const showDate = () => {
+  // const weekday = [
+  //   'Sunday',
+  //   'Monday',
+  //   'Tuesday',
+  //   'Wednesday',
+  //   'Thursday',
+  //   'Friday',
+  //   'Saturday',
+  // ];
+
+  const weekday = [
+    'Воскресенье',
+    'Понедельник',
+    'Вторник',
+    'Среда',
+    'Четверг',
+    'Пятница',
+    'Суббота',
+  ];
+
+  const d = new Date();
+  let day = weekday[d.getDay()];
+
   const date = document.querySelector('.date');
   const options = {
     month: 'long',
     day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    timeZone: 'UTC',
   };
   const currentDate = new Date().toLocaleDateString('ru-Ru', options);
-  date.textContent = currentDate;
+  date.textContent = day + ', ' + currentDate;
   setTimeout(showDate, 1000);
 };
 
 const showGreeting = () => {
   const greetingText = document.querySelector('.greeting');
-  const getGr = getGreeting();
-  greetingText.textContent = `Good ${getGr}`;
+  const userDay = getGreeting();
+  greetingText.textContent = `Good ${userDay}`;
   setTimeout(showGreeting, 1000);
 };
 
@@ -61,11 +83,11 @@ const getGreeting = () => {
   const date = new Date();
   const hours = date.getHours();
 
-  if (hours >= 5 && hours < 11) {
+  if (hours >= 6 && hours < 12) {
     return 'Morning';
-  } else if (hours >= 11 && hours < 17) {
+  } else if (hours >= 12 && hours < 18) {
     return 'Day';
-  } else if (hours >= 17 && hours < 23) {
+  } else if (hours >= 18 && hours < 24) {
     return 'Evening';
   } else {
     return 'Night';
